@@ -1,7 +1,7 @@
 package ru.nsu.andrvat.runningBlocks;
 
-import ru.nsu.andrvat.argsParser.CommandLineArgsParser;
-import ru.nsu.andrvat.executor.ExecutionContext;
+import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
+import ru.nsu.andrvat.executors.ExecutionContext;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
 import java.io.BufferedReader;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Readfile implements Executesable {
+public class Readfile implements Executable {
     private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
     private static final Integer requiredArgumentsNumber = 1;
 

@@ -1,4 +1,4 @@
-package ru.nsu.andrvat.argsParser;
+package ru.nsu.andrvat.argsParsers;
 
 import org.apache.commons.cli.ParseException;
 

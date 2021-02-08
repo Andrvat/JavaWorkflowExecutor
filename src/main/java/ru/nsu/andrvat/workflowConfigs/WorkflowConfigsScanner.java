@@ -1,6 +1,6 @@
 package ru.nsu.andrvat.workflowConfigs;
 
-import ru.nsu.andrvat.argsParser.CommandLineArgsParser;
+import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
 import javax.naming.InvalidNameException;
@@ -10,7 +10,7 @@ import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class WorkflowConfigsScanner implements Scanable, Analyzesable {
+public class WorkflowConfigsScanner implements Scannable, Analyzable {
     private final LinkedHashMap<Integer, ArrayList<String>> blockArguments = new LinkedHashMap<>();
     private final Map<Integer, String> blockNames = new LinkedHashMap<>();
     private final Queue<Integer> executorsQueue = new LinkedList<>();
@@ -19,16 +19,15 @@ public class WorkflowConfigsScanner implements Scanable, Analyzesable {
     private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
 
     @Override
-    public void scanConfig(String sourceFilename) throws RuntimeException {
-        InputStream inputStream = WorkflowConfigsScanner.class.getResourceAsStream(sourceFilename);
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+    public void scanConfig(InputStream sourceInputStream) throws RuntimeException {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(sourceInputStream))) {
             readAllDataByBufferedReader(reader);
         } catch (IOException | NullPointerException exception) {
-            logger.log(Level.SEVERE, "Couldn't read workflow config data from " + sourceFilename, exception);
+            logger.log(Level.SEVERE, "Couldn't read workflow config data", exception);
             throw new RuntimeException();
         }
         logger.info("Configuration was successfully scanned");
-        logger.info("Configs source filename: " + sourceFilename);
+        logger.info("Configs source input stream" + sourceInputStream);
     }
 
     private void readAllDataByBufferedReader(BufferedReader reader) throws IOException {

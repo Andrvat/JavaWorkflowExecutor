@@ -1,5 +1,5 @@
 package ru.nsu.andrvat.workflowConfigs;
 
-public interface Analyzesable {
+public interface Analyzable {
     void analyzeConfig() throws RuntimeException;
 }

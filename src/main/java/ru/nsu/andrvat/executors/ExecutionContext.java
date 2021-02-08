@@ -1,7 +1,7 @@
-package ru.nsu.andrvat.executor;
+package ru.nsu.andrvat.executors;
 
 import lombok.Builder;
-import ru.nsu.andrvat.argsParser.CommandLineArgsParser;
+import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
 import java.util.*;

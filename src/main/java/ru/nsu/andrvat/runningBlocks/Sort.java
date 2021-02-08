@@ -1,14 +1,14 @@
 package ru.nsu.andrvat.runningBlocks;
 
-import ru.nsu.andrvat.argsParser.CommandLineArgsParser;
-import ru.nsu.andrvat.executor.ExecutionContext;
+import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
+import ru.nsu.andrvat.executors.ExecutionContext;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.logging.Logger;
 
-public class Sort implements Executesable {
+public class Sort implements Executable {
     private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
     private static final Integer requiredArgumentsNumber = 0;
 

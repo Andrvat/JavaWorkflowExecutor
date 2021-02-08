@@ -1,8 +1,9 @@
-package ru.nsu.andrvat.argsParser;
+package ru.nsu.andrvat.argsParsers;
 
 import org.apache.commons.cli.*;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
+import java.io.InputStream;
 import java.util.logging.Logger;
 
 public class CommandLineArgsParser implements Parseable {
@@ -20,7 +21,7 @@ public class CommandLineArgsParser implements Parseable {
                 .description("Workflow configuration's filename")
                 .build()));
 
-        logger.info( "All options were added by class constructor");
+        logger.info("All options were added by class constructor");
     }
 
     private Option createNewOption(OptionParamsBuilder paramsBuilder) {
@@ -30,7 +31,7 @@ public class CommandLineArgsParser implements Parseable {
                 paramsBuilder.getDescription());
         option.setRequired(true);
 
-        logger.info( "Option was created");
+        logger.info("Option was created");
         return option;
     }
 
@@ -40,15 +41,14 @@ public class CommandLineArgsParser implements Parseable {
         CommandLine commandLine = parser.parse(parserOptions, args);
 
         workflowConfigFilename = commandLine.getOptionValue("w");
-        logger.info( "Config filename: " + workflowConfigFilename);
+        logger.info("Config filename: " + workflowConfigFilename);
 
-        logger.info( "All command line arguments were read");
+        logger.info("All command line arguments were read");
     }
 
-    public String getWorkflowConfigFilename() {
-        return workflowConfigFilename;
+    public InputStream getSourceInputStream() {
+        return CommandLineArgsParser.class.getResourceAsStream(workflowConfigFilename);
     }
-
 
     public Options getParserOptions() {
         return parserOptions;
