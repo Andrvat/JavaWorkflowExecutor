@@ -47,6 +47,10 @@ class WorkflowExecutorTest {
                 blockIdsByBlockNames.get(blockName);
     }
 
+    public ArrayList<String> cloneFrom(ArrayList<String> list) {
+        return (ArrayList<String>) list.clone();
+    }
+
     @Test
     public void testSortFunction() {
         ArrayList<String> sortedSpecifiedOperatingText = specifiedOperatingText;
@@ -72,6 +76,15 @@ class WorkflowExecutorTest {
     }
 
     @Test
+    public void testReadfileFunction() {
+        workflowExecutor.parametrizedRun(new ByteArrayInputStream(
+                buildCorrectWorkflowConfigSettingsWithExecuteSequence
+                        (specifiedWorkflowConfigSettings, "readfile")
+                        .getBytes(StandardCharsets.UTF_8)));
+        Assertions.assertEquals(specifiedOperatingText, workflowExecutor.getContextOperatingText());
+    }
+
+    @Test
     public void testReplaceFunction() {
         ArrayList<String> forReplaceSpecifiedOperatingText = new ArrayList<>();
         for (String textLine : specifiedOperatingText) {
@@ -87,14 +100,31 @@ class WorkflowExecutorTest {
 
     @Test
     public void testDumpFunctionForExceededArgumentsNumber() {
-        ArrayList<String> brokenWorkflowConfigSettingsWithExecuteSequence = specifiedWorkflowConfigSettings;
+        ArrayList<String> brokenWorkflowConfigSettingsWithExecuteSequence = cloneFrom(specifiedWorkflowConfigSettings);
         brokenWorkflowConfigSettingsWithExecuteSequence.set(blockIdsByBlockNames.get("dump"), "2 = grep test hahah");
 
-        workflowExecutor.parametrizedRun(new ByteArrayInputStream(
-                buildCorrectWorkflowConfigSettingsWithExecuteSequence
-                        (brokenWorkflowConfigSettingsWithExecuteSequence, "sort")
-                        .getBytes(StandardCharsets.UTF_8)));
-        Assertions.assertThrows()
+        Assertions.assertThrows(
+                RuntimeException.class, () -> {
+                    workflowExecutor.parametrizedRun(new ByteArrayInputStream(
+                            buildCorrectWorkflowConfigSettingsWithExecuteSequence
+                                    (brokenWorkflowConfigSettingsWithExecuteSequence, "dump")
+                                    .getBytes(StandardCharsets.UTF_8)));
+                });
+
+    }
+
+    @Test
+    public void testReadfileFunctionForIncorrectSignatureConfigLine() {
+        ArrayList<String> brokenWorkflowConfigSettingsWithExecuteSequence = cloneFrom(specifiedWorkflowConfigSettings);
+        brokenWorkflowConfigSettingsWithExecuteSequence.set(blockIdsByBlockNames.get("readfile"), "3 ~ readfile inputText.txt");
+
+        Assertions.assertThrows(
+                RuntimeException.class, () -> {
+                    workflowExecutor.parametrizedRun(new ByteArrayInputStream(
+                            buildCorrectWorkflowConfigSettingsWithExecuteSequence
+                                    (brokenWorkflowConfigSettingsWithExecuteSequence, "readfile")
+                                    .getBytes(StandardCharsets.UTF_8)));
+                });
 
     }
 }

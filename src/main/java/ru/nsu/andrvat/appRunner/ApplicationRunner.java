@@ -27,7 +27,11 @@ public class ApplicationRunner {
         }
 
         WorkflowExecutor executor = new WorkflowExecutor();
-        executor.parametrizedRun(commandLineArgsParser.getSourceInputStream());
+        try {
+            executor.parametrizedRun(commandLineArgsParser.getSourceInputStream());
+        } catch (RuntimeException exception) {
+            logger.log(Level.SEVERE, "ParametrizedRun function ended abruptly. Program stopped!", exception);
+        }
     }
 
 }

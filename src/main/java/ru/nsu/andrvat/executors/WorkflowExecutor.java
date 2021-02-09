@@ -18,15 +18,10 @@ public class WorkflowExecutor implements ParameterizedRunnable {
     private Queue<Integer> executorsQueue;
 
     @Override
-    public void parametrizedRun(InputStream sourceInputStream) {
+    public void parametrizedRun(InputStream sourceInputStream) throws RuntimeException {
         WorkflowConfigsScanner configsScanner = new WorkflowConfigsScanner();
-        try {
-            configsScanner.scanConfig(sourceInputStream);
-            configsScanner.analyzeConfig();
-        } catch (RuntimeException exception) {
-            logger.log(Level.SEVERE, "Program stopped. Exit from run app", exception);
-            return;
-        }
+        configsScanner.scanConfig(sourceInputStream);
+        configsScanner.analyzeConfig();
 
         context = ExecutionContext.builder()
                 .blockNames(configsScanner.getBlockNames())
@@ -40,14 +35,10 @@ public class WorkflowExecutor implements ParameterizedRunnable {
 
     private void executeBlocksCallsSequence() {
         while (!executorsQueue.isEmpty()) {
-            try {
-                Integer blockId = executorsQueue.remove();
-                Executable executableBlock = new BlocksBuilder(context.getBlockNameById(blockId)).buildBlock();
-                executableBlock.execute(blockId, context);
-            } catch (RuntimeException exception) {
-                logger.log(Level.SEVERE, "ParametrizedRun function ended abruptly. Program stopped", exception);
-                return;
-            }
+            Integer blockId = executorsQueue.remove();
+            Executable executableBlock = new BlocksBuilder(context.getBlockNameById(blockId)).buildBlock();
+            executableBlock.execute(blockId, context);
+
         }
     }
 
