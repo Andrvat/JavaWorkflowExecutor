@@ -100,14 +100,14 @@ class WorkflowExecutorTest {
 
     @Test
     public void testDumpFunctionForExceededArgumentsNumber() {
-        ArrayList<String> brokenWorkflowConfigSettingsWithExecuteSequence = cloneFrom(specifiedWorkflowConfigSettings);
-        brokenWorkflowConfigSettingsWithExecuteSequence.set(blockIdsByBlockNames.get("dump"), "2 = grep test hahah");
+        ArrayList<String> brokenWorkflowConfigSettings = cloneFrom(specifiedWorkflowConfigSettings);
+        brokenWorkflowConfigSettings.set(blockIdsByBlockNames.get("dump"), "2 = grep test hahah");
 
         Assertions.assertThrows(
                 RuntimeException.class, () -> {
                     workflowExecutor.parametrizedRun(new ByteArrayInputStream(
                             buildCorrectWorkflowConfigSettingsWithExecuteSequence
-                                    (brokenWorkflowConfigSettingsWithExecuteSequence, "dump")
+                                    (brokenWorkflowConfigSettings, "dump")
                                     .getBytes(StandardCharsets.UTF_8)));
                 });
 
@@ -115,14 +115,14 @@ class WorkflowExecutorTest {
 
     @Test
     public void testReadfileFunctionForIncorrectSignatureConfigLine() {
-        ArrayList<String> brokenWorkflowConfigSettingsWithExecuteSequence = cloneFrom(specifiedWorkflowConfigSettings);
-        brokenWorkflowConfigSettingsWithExecuteSequence.set(blockIdsByBlockNames.get("readfile"), "3 ~ readfile inputText.txt");
+        ArrayList<String> brokenWorkflowConfigSettings = cloneFrom(specifiedWorkflowConfigSettings);
+        brokenWorkflowConfigSettings.set(blockIdsByBlockNames.get("readfile"), "3 ~ readfile inputText.txt");
 
         Assertions.assertThrows(
                 RuntimeException.class, () -> {
                     workflowExecutor.parametrizedRun(new ByteArrayInputStream(
                             buildCorrectWorkflowConfigSettingsWithExecuteSequence
-                                    (brokenWorkflowConfigSettingsWithExecuteSequence, "readfile")
+                                    (brokenWorkflowConfigSettings, "readfile")
                                     .getBytes(StandardCharsets.UTF_8)));
                 });
 
