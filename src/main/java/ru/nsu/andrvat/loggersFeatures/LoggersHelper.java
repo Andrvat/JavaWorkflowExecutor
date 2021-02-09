@@ -13,7 +13,7 @@ public class LoggersHelper {
             logger = Logger.getLogger(callingClassname);
             logger.setLevel(Level.ALL);
             try {
-                FileHandler fileHandler = new FileHandler("logs/log.xml");
+                FileHandler fileHandler = new FileHandler("log.xml");
                 fileHandler.setLevel(Level.ALL);
                 logger.addHandler(fileHandler);
             } catch (SecurityException e) {

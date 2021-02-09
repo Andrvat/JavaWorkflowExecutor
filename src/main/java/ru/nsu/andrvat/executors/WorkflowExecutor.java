@@ -14,6 +14,9 @@ import java.util.logging.Logger;
 public class WorkflowExecutor implements ParameterizedRunnable {
     private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
 
+    private ExecutionContext context;
+    private Queue<Integer> executorsQueue;
+
     @Override
     public void parametrizedRun(InputStream sourceInputStream) {
         WorkflowConfigsScanner configsScanner = new WorkflowConfigsScanner();
@@ -25,13 +28,17 @@ public class WorkflowExecutor implements ParameterizedRunnable {
             return;
         }
 
-        ExecutionContext context = ExecutionContext.builder()
+        context = ExecutionContext.builder()
                 .blockNames(configsScanner.getBlockNames())
                 .blockArguments(configsScanner.getBlockArguments())
                 .operatingText(new ArrayList<>())
                 .build();
 
-        Queue<Integer> executorsQueue = configsScanner.getExecutorsQueue();
+        executorsQueue = configsScanner.getExecutorsQueue();
+        executeBlocksCallsSequence();
+    }
+
+    private void executeBlocksCallsSequence() {
         while (!executorsQueue.isEmpty()) {
             try {
                 Integer blockId = executorsQueue.remove();
@@ -42,5 +49,9 @@ public class WorkflowExecutor implements ParameterizedRunnable {
                 return;
             }
         }
+    }
+
+    public ArrayList<String> getContextOperatingText() {
+        return context.getOperatingText();
     }
 }

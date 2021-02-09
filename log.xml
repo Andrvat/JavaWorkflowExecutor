@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-02-09T17:03:22.543064900Z</date>
+  <millis>1612890202543</millis>
+  <nanos>64900</nanos>
+  <sequence>0</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>scanConfig</method>
+  <thread>1</thread>
+  <message>Configuration was successfully scanned</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.560020100Z</date>
+  <millis>1612890202560</millis>
+  <nanos>20100</nanos>
+  <sequence>1</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>scanConfig</method>
+  <thread>1</thread>
+  <message>Configs source input streamjava.io.ByteArrayInputStream@3c153a1</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.561017200Z</date>
+  <millis>1612890202561</millis>
+  <nanos>17200</nanos>
+  <sequence>2</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>analyzeConfig</method>
+  <thread>1</thread>
+  <message>desc title was found successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.563012600Z</date>
+  <millis>1612890202563</millis>
+  <nanos>12600</nanos>
+  <sequence>3</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [1] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.564009100Z</date>
+  <millis>1612890202564</millis>
+  <nanos>9100</nanos>
+  <sequence>4</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.564009100Z</date>
+  <millis>1612890202564</millis>
+  <nanos>9100</nanos>
+  <sequence>5</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [dump] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.565006500Z</date>
+  <millis>1612890202565</millis>
+  <nanos>6500</nanos>
+  <sequence>6</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [1, dump] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.565006500Z</date>
+  <millis>1612890202565</millis>
+  <nanos>6500</nanos>
+  <sequence>7</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [1] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.566004200Z</date>
+  <millis>1612890202566</millis>
+  <nanos>4200</nanos>
+  <sequence>8</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [2] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.566004200Z</date>
+  <millis>1612890202566</millis>
+  <nanos>4200</nanos>
+  <sequence>9</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.567005Z</date>
+  <millis>1612890202567</millis>
+  <nanos>5000</nanos>
+  <sequence>10</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [grep] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.568000500Z</date>
+  <millis>1612890202568</millis>
+  <nanos>500</nanos>
+  <sequence>11</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [2, grep] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.568000500Z</date>
+  <millis>1612890202568</millis>
+  <nanos>500</nanos>
+  <sequence>12</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [2] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.568000500Z</date>
+  <millis>1612890202568</millis>
+  <nanos>500</nanos>
+  <sequence>13</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [3] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.568996800Z</date>
+  <millis>1612890202568</millis>
+  <nanos>996800</nanos>
+  <sequence>14</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.568996800Z</date>
+  <millis>1612890202568</millis>
+  <nanos>996800</nanos>
+  <sequence>15</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [readfile] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.569993200Z</date>
+  <millis>1612890202569</millis>
+  <nanos>993200</nanos>
+  <sequence>16</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [3, readfile] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.569993200Z</date>
+  <millis>1612890202569</millis>
+  <nanos>993200</nanos>
+  <sequence>17</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [3] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.570990300Z</date>
+  <millis>1612890202570</millis>
+  <nanos>990300</nanos>
+  <sequence>18</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [4] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.570990300Z</date>
+  <millis>1612890202570</millis>
+  <nanos>990300</nanos>
+  <sequence>19</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.571987700Z</date>
+  <millis>1612890202571</millis>
+  <nanos>987700</nanos>
+  <sequence>20</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [replace] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.571987700Z</date>
+  <millis>1612890202571</millis>
+  <nanos>987700</nanos>
+  <sequence>21</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [4, replace] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.571987700Z</date>
+  <millis>1612890202571</millis>
+  <nanos>987700</nanos>
+  <sequence>22</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [4] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.572985100Z</date>
+  <millis>1612890202572</millis>
+  <nanos>985100</nanos>
+  <sequence>23</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [5] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.572985100Z</date>
+  <millis>1612890202572</millis>
+  <nanos>985100</nanos>
+  <sequence>24</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.573982300Z</date>
+  <millis>1612890202573</millis>
+  <nanos>982300</nanos>
+  <sequence>25</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [sort] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.573982300Z</date>
+  <millis>1612890202573</millis>
+  <nanos>982300</nanos>
+  <sequence>26</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [5, sort] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.574980100Z</date>
+  <millis>1612890202574</millis>
+  <nanos>980100</nanos>
+  <sequence>27</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [5] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.574980100Z</date>
+  <millis>1612890202574</millis>
+  <nanos>980100</nanos>
+  <sequence>28</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [6] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.574980100Z</date>
+  <millis>1612890202574</millis>
+  <nanos>980100</nanos>
+  <sequence>29</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.575976900Z</date>
+  <millis>1612890202575</millis>
+  <nanos>976900</nanos>
+  <sequence>30</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [writefile] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.575976900Z</date>
+  <millis>1612890202575</millis>
+  <nanos>976900</nanos>
+  <sequence>31</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [6, writefile] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.576974400Z</date>
+  <millis>1612890202576</millis>
+  <nanos>974400</nanos>
+  <sequence>32</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [6] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.576974400Z</date>
+  <millis>1612890202576</millis>
+  <nanos>974400</nanos>
+  <sequence>33</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>analyzeConfig</method>
+  <thread>1</thread>
+  <message>All matches were parsed successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.577972Z</date>
+  <millis>1612890202577</millis>
+  <nanos>972000</nanos>
+  <sequence>34</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>analyzeConfig</method>
+  <thread>1</thread>
+  <message>All block ids were added successfully to executors queue</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.577972Z</date>
+  <millis>1612890202577</millis>
+  <nanos>972000</nanos>
+  <sequence>35</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>analyzeConfig</method>
+  <thread>1</thread>
+  <message>Workflow configs was successfully analyzed</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.590964900Z</date>
+  <millis>1612890202590</millis>
+  <nanos>964900</nanos>
+  <sequence>36</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.runningBlocks.Readfile</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>All data from source file were successfully scanned</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.590964900Z</date>
+  <millis>1612890202590</millis>
+  <nanos>964900</nanos>
+  <sequence>37</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.runningBlocks.Readfile</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Source data filename: inputText.txt</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.592958800Z</date>
+  <millis>1612890202592</millis>
+  <nanos>958800</nanos>
+  <sequence>38</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.runningBlocks.Sort</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>All lines from operating text were successfully sorted</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.609912Z</date>
+  <millis>1612890202609</millis>
+  <nanos>912000</nanos>
+  <sequence>39</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>scanConfig</method>
+  <thread>1</thread>
+  <message>Configuration was successfully scanned</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.609912Z</date>
+  <millis>1612890202609</millis>
+  <nanos>912000</nanos>
+  <sequence>40</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>scanConfig</method>
+  <thread>1</thread>
+  <message>Configs source input streamjava.io.ByteArrayInputStream@4c15e7fd</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.610909900Z</date>
+  <millis>1612890202610</millis>
+  <nanos>909900</nanos>
+  <sequence>41</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>analyzeConfig</method>
+  <thread>1</thread>
+  <message>desc title was found successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.610909900Z</date>
+  <millis>1612890202610</millis>
+  <nanos>909900</nanos>
+  <sequence>42</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [1] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.610909900Z</date>
+  <millis>1612890202610</millis>
+  <nanos>909900</nanos>
+  <sequence>43</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.611906700Z</date>
+  <millis>1612890202611</millis>
+  <nanos>906700</nanos>
+  <sequence>44</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [dump] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.611906700Z</date>
+  <millis>1612890202611</millis>
+  <nanos>906700</nanos>
+  <sequence>45</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [1, dump] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.612903900Z</date>
+  <millis>1612890202612</millis>
+  <nanos>903900</nanos>
+  <sequence>46</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [1] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.612903900Z</date>
+  <millis>1612890202612</millis>
+  <nanos>903900</nanos>
+  <sequence>47</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [2] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.613901900Z</date>
+  <millis>1612890202613</millis>
+  <nanos>901900</nanos>
+  <sequence>48</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.614901200Z</date>
+  <millis>1612890202614</millis>
+  <nanos>901200</nanos>
+  <sequence>49</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [grep] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.615896500Z</date>
+  <millis>1612890202615</millis>
+  <nanos>896500</nanos>
+  <sequence>50</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [2, grep] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.615896500Z</date>
+  <millis>1612890202615</millis>
+  <nanos>896500</nanos>
+  <sequence>51</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [2] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.616893800Z</date>
+  <millis>1612890202616</millis>
+  <nanos>893800</nanos>
+  <sequence>52</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [3] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.616893800Z</date>
+  <millis>1612890202616</millis>
+  <nanos>893800</nanos>
+  <sequence>53</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.617891300Z</date>
+  <millis>1612890202617</millis>
+  <nanos>891300</nanos>
+  <sequence>54</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [readfile] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.617891300Z</date>
+  <millis>1612890202617</millis>
+  <nanos>891300</nanos>
+  <sequence>55</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [3, readfile] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.618888100Z</date>
+  <millis>1612890202618</millis>
+  <nanos>888100</nanos>
+  <sequence>56</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [3] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.618888100Z</date>
+  <millis>1612890202618</millis>
+  <nanos>888100</nanos>
+  <sequence>57</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [4] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.619885800Z</date>
+  <millis>1612890202619</millis>
+  <nanos>885800</nanos>
+  <sequence>58</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.619885800Z</date>
+  <millis>1612890202619</millis>
+  <nanos>885800</nanos>
+  <sequence>59</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [replace] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.620885200Z</date>
+  <millis>1612890202620</millis>
+  <nanos>885200</nanos>
+  <sequence>60</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [4, replace] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.620885200Z</date>
+  <millis>1612890202620</millis>
+  <nanos>885200</nanos>
+  <sequence>61</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [4] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.620885200Z</date>
+  <millis>1612890202620</millis>
+  <nanos>885200</nanos>
+  <sequence>62</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [5] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.621880200Z</date>
+  <millis>1612890202621</millis>
+  <nanos>880200</nanos>
+  <sequence>63</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.621880200Z</date>
+  <millis>1612890202621</millis>
+  <nanos>880200</nanos>
+  <sequence>64</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [sort] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.621880200Z</date>
+  <millis>1612890202621</millis>
+  <nanos>880200</nanos>
+  <sequence>65</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [5, sort] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.622878500Z</date>
+  <millis>1612890202622</millis>
+  <nanos>878500</nanos>
+  <sequence>66</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [5] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.622878500Z</date>
+  <millis>1612890202622</millis>
+  <nanos>878500</nanos>
+  <sequence>67</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [6] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.623875300Z</date>
+  <millis>1612890202623</millis>
+  <nanos>875300</nanos>
+  <sequence>68</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.623875300Z</date>
+  <millis>1612890202623</millis>
+  <nanos>875300</nanos>
+  <sequence>69</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [writefile] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.624872400Z</date>
+  <millis>1612890202624</millis>
+  <nanos>872400</nanos>
+  <sequence>70</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [6, writefile] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.624872400Z</date>
+  <millis>1612890202624</millis>
+  <nanos>872400</nanos>
+  <sequence>71</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [6] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.624872400Z</date>
+  <millis>1612890202624</millis>
+  <nanos>872400</nanos>
+  <sequence>72</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>analyzeConfig</method>
+  <thread>1</thread>
+  <message>All matches were parsed successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.625871700Z</date>
+  <millis>1612890202625</millis>
+  <nanos>871700</nanos>
+  <sequence>73</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>analyzeConfig</method>
+  <thread>1</thread>
+  <message>All block ids were added successfully to executors queue</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.625871700Z</date>
+  <millis>1612890202625</millis>
+  <nanos>871700</nanos>
+  <sequence>74</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>analyzeConfig</method>
+  <thread>1</thread>
+  <message>Workflow configs was successfully analyzed</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.626867300Z</date>
+  <millis>1612890202626</millis>
+  <nanos>867300</nanos>
+  <sequence>75</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.runningBlocks.Readfile</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>All data from source file were successfully scanned</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.627864100Z</date>
+  <millis>1612890202627</millis>
+  <nanos>864100</nanos>
+  <sequence>76</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.runningBlocks.Readfile</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Source data filename: inputText.txt</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.630857800Z</date>
+  <millis>1612890202630</millis>
+  <nanos>857800</nanos>
+  <sequence>77</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.runningBlocks.Grep</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Selection of context text lines containing the word [test] was successful done</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.633850100Z</date>
+  <millis>1612890202633</millis>
+  <nanos>850100</nanos>
+  <sequence>78</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>scanConfig</method>
+  <thread>1</thread>
+  <message>Configuration was successfully scanned</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.634847300Z</date>
+  <millis>1612890202634</millis>
+  <nanos>847300</nanos>
+  <sequence>79</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>scanConfig</method>
+  <thread>1</thread>
+  <message>Configs source input streamjava.io.ByteArrayInputStream@1e730495</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.635843900Z</date>
+  <millis>1612890202635</millis>
+  <nanos>843900</nanos>
+  <sequence>80</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>analyzeConfig</method>
+  <thread>1</thread>
+  <message>desc title was found successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.636841500Z</date>
+  <millis>1612890202636</millis>
+  <nanos>841500</nanos>
+  <sequence>81</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [1] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.637838300Z</date>
+  <millis>1612890202637</millis>
+  <nanos>838300</nanos>
+  <sequence>82</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.637838300Z</date>
+  <millis>1612890202637</millis>
+  <nanos>838300</nanos>
+  <sequence>83</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [dump] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.638835700Z</date>
+  <millis>1612890202638</millis>
+  <nanos>835700</nanos>
+  <sequence>84</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [1, dump] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.639832700Z</date>
+  <millis>1612890202639</millis>
+  <nanos>832700</nanos>
+  <sequence>85</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [1] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.639832700Z</date>
+  <millis>1612890202639</millis>
+  <nanos>832700</nanos>
+  <sequence>86</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [2] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.640831Z</date>
+  <millis>1612890202640</millis>
+  <nanos>831000</nanos>
+  <sequence>87</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.641827200Z</date>
+  <millis>1612890202641</millis>
+  <nanos>827200</nanos>
+  <sequence>88</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [grep] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.641827200Z</date>
+  <millis>1612890202641</millis>
+  <nanos>827200</nanos>
+  <sequence>89</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [2, grep] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.642824100Z</date>
+  <millis>1612890202642</millis>
+  <nanos>824100</nanos>
+  <sequence>90</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [2] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.642824100Z</date>
+  <millis>1612890202642</millis>
+  <nanos>824100</nanos>
+  <sequence>91</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [3] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.643822800Z</date>
+  <millis>1612890202643</millis>
+  <nanos>822800</nanos>
+  <sequence>92</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.644819100Z</date>
+  <millis>1612890202644</millis>
+  <nanos>819100</nanos>
+  <sequence>93</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [readfile] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.644819100Z</date>
+  <millis>1612890202644</millis>
+  <nanos>819100</nanos>
+  <sequence>94</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [3, readfile] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.644819100Z</date>
+  <millis>1612890202644</millis>
+  <nanos>819100</nanos>
+  <sequence>95</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [3] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.645818600Z</date>
+  <millis>1612890202645</millis>
+  <nanos>818600</nanos>
+  <sequence>96</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [4] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.645818600Z</date>
+  <millis>1612890202645</millis>
+  <nanos>818600</nanos>
+  <sequence>97</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.646814500Z</date>
+  <millis>1612890202646</millis>
+  <nanos>814500</nanos>
+  <sequence>98</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [replace] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.647812200Z</date>
+  <millis>1612890202647</millis>
+  <nanos>812200</nanos>
+  <sequence>99</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [4, replace] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.648811400Z</date>
+  <millis>1612890202648</millis>
+  <nanos>811400</nanos>
+  <sequence>100</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [4] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.648811400Z</date>
+  <millis>1612890202648</millis>
+  <nanos>811400</nanos>
+  <sequence>101</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [5] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.648811400Z</date>
+  <millis>1612890202648</millis>
+  <nanos>811400</nanos>
+  <sequence>102</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.649806100Z</date>
+  <millis>1612890202649</millis>
+  <nanos>806100</nanos>
+  <sequence>103</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [sort] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.649806100Z</date>
+  <millis>1612890202649</millis>
+  <nanos>806100</nanos>
+  <sequence>104</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [5, sort] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.650804700Z</date>
+  <millis>1612890202650</millis>
+  <nanos>804700</nanos>
+  <sequence>105</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [5] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.650804700Z</date>
+  <millis>1612890202650</millis>
+  <nanos>804700</nanos>
+  <sequence>106</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [6] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.650804700Z</date>
+  <millis>1612890202650</millis>
+  <nanos>804700</nanos>
+  <sequence>107</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Equal sign was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.651801300Z</date>
+  <millis>1612890202651</millis>
+  <nanos>801300</nanos>
+  <sequence>108</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block operation name [writefile] was read successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.651801300Z</date>
+  <millis>1612890202651</millis>
+  <nanos>801300</nanos>
+  <sequence>109</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Pair [6, writefile] were added to properties successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.652800200Z</date>
+  <millis>1612890202652</millis>
+  <nanos>800200</nanos>
+  <sequence>110</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>parseOperationalMatches</method>
+  <thread>1</thread>
+  <message>Block id [6] got his arguments successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.652800200Z</date>
+  <millis>1612890202652</millis>
+  <nanos>800200</nanos>
+  <sequence>111</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>analyzeConfig</method>
+  <thread>1</thread>
+  <message>All matches were parsed successfully</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.653795100Z</date>
+  <millis>1612890202653</millis>
+  <nanos>795100</nanos>
+  <sequence>112</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>analyzeConfig</method>
+  <thread>1</thread>
+  <message>All block ids were added successfully to executors queue</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.653795100Z</date>
+  <millis>1612890202653</millis>
+  <nanos>795100</nanos>
+  <sequence>113</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner</class>
+  <method>analyzeConfig</method>
+  <thread>1</thread>
+  <message>Workflow configs was successfully analyzed</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.655790600Z</date>
+  <millis>1612890202655</millis>
+  <nanos>790600</nanos>
+  <sequence>114</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.runningBlocks.Readfile</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>All data from source file were successfully scanned</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.655790600Z</date>
+  <millis>1612890202655</millis>
+  <nanos>790600</nanos>
+  <sequence>115</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.runningBlocks.Readfile</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>Source data filename: inputText.txt</message>
+</record>
+<record>
+  <date>2021-02-09T17:03:22.657784300Z</date>
+  <millis>1612890202657</millis>
+  <nanos>784300</nanos>
+  <sequence>116</sequence>
+  <logger>ru.nsu.andrvat.argsParsers.CommandLineArgsParser</logger>
+  <level>INFO</level>
+  <class>ru.nsu.andrvat.runningBlocks.Replace</class>
+  <method>execute</method>
+  <thread>1</thread>
+  <message>The word [test] was successfully replaced with the word [winter!] in the entire source text</message>
+</record>
+</log>
