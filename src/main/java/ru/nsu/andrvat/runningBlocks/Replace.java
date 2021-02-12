@@ -8,9 +8,13 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Replace implements Executable {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
+public class Replace extends ExecutableBlock {
+    private static final Logger logger = LoggersHelper.getLoggerInstance(Replace.class.getName());
     private static final Integer requiredArgumentsNumber = 2;
+
+    public Replace() {
+        super(BlocksInOutTypes.InOutAvailable);
+    }
 
     @Override
     public void execute(Integer id, ExecutionContext context) throws RuntimeException {
@@ -21,7 +25,6 @@ public class Replace implements Executable {
                 .logger(logger)
                 .build();
         checker.checkArgs(blockArguments);
-        checker.checkTextForNull(context.getOperatingText());
         String wordToReplaceIt = getWordToReplaceIt(blockArguments);
         String substitutingWord = getSubstitutingWord(blockArguments);
         for (String currentTextLine : context.getOperatingText()) {

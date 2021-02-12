@@ -14,7 +14,7 @@ public class ExecutionContext {
 
     private ArrayList<String> operatingText;
 
-    private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
+    private static final Logger logger = LoggersHelper.getLoggerInstance(ExecutionContext.class.getName());
 
     public ArrayList<String> getBlockArgumentsById(Integer id) {
         return blockArguments.get(id);

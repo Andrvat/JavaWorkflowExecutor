@@ -21,7 +21,7 @@ class WorkflowExecutorTest {
             "desc",
             "1 = dump dumpText.txt",
             "2 = grep test",
-            "3 = readfile inputText.txt",
+            "3 = readfile in.txt",
             "4 = replace test winter!",
             "5 = sort",
             "6 = writefile output.txt",

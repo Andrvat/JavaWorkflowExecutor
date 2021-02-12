@@ -1,0 +1,5 @@
+This is the first line of specified operating text
+Aaaabb, test grep
+Bbbbaa, testing grep
+Ccccab, test GREEEP!
+This is the last line of specified operating text and test at all ...

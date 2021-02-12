@@ -11,9 +11,13 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Dump implements Executable {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
+public class Dump extends ExecutableBlock {
+    private static final Logger logger = LoggersHelper.getLoggerInstance(Dump.class.getName());
     private static final Integer requiredArgumentsNumber = 1;
+
+    public Dump() {
+        super(BlocksInOutTypes.InOutAvailable);
+    }
 
     @Override
     public void execute(Integer id, ExecutionContext context) throws RuntimeException {
@@ -23,7 +27,6 @@ public class Dump implements Executable {
                 .logger(logger)
                 .build();
         checker.checkArgs(blockArguments);
-        checker.checkTextForNull(context.getOperatingText());
         String destinationFilename = getDestinationFilenameForReadingText(blockArguments);
         try (PrintWriter writer = new PrintWriter(destinationFilename, StandardCharsets.UTF_8)) {
             for (String currentTextLine : context.getOperatingText()) {

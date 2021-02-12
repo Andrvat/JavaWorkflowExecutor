@@ -16,7 +16,7 @@ public class WorkflowConfigsScanner implements Scannable, Analyzable {
     private final Queue<Integer> executorsQueue = new LinkedList<>();
     private final Queue<String> configuratorContents = new LinkedList<>();
 
-    private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
+    private static final Logger logger = LoggersHelper.getLoggerInstance(WorkflowConfigsScanner.class.getName());
 
     @Override
     public void scanConfig(InputStream sourceInputStream) throws RuntimeException {

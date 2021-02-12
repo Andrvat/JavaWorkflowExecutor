@@ -11,11 +11,14 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Writefile implements Executable {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
+public class Writefile extends ExecutableBlock {
+    private static final Logger logger = LoggersHelper.getLoggerInstance(Writefile.class.getName());
     private static final Integer requiredArgumentsNumber = 1;
 
-    // TODO: как заставить PrintWriter писать в файл, находящийся там, где я хочу, а не в корень проекта
+    public Writefile() {
+        super(BlocksInOutTypes.InOnly);
+    }
+
     @Override
     public void execute(Integer id, ExecutionContext context) throws RuntimeException {
         ArrayList<String> blockArguments = context.getBlockArgumentsById(id);
@@ -24,13 +27,11 @@ public class Writefile implements Executable {
                 .logger(logger)
                 .build();
         checker.checkArgs(blockArguments);
-        checker.checkTextForNull(context.getOperatingText());
         String destinationFilename = getDestinationFilenameForReadingText(blockArguments);
         try (PrintWriter writer = new PrintWriter(destinationFilename, StandardCharsets.UTF_8)) {
             for (String currentTextLine : context.getOperatingText()) {
                 writer.println(currentTextLine);
             }
-            context.setOperatingText(null);
         } catch (IOException exception) {
             logger.log(Level.SEVERE, "Couldn't write data to " + destinationFilename, exception);
             throw new RuntimeException();

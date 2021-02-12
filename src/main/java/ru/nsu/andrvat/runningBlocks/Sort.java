@@ -8,9 +8,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.logging.Logger;
 
-public class Sort implements Executable {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
+public class Sort extends ExecutableBlock {
+    private static final Logger logger = LoggersHelper.getLoggerInstance(Sort.class.getName());
     private static final Integer requiredArgumentsNumber = 0;
+
+    public Sort() {
+        super(BlocksInOutTypes.InOutAvailable);
+    }
 
     @Override
     public void execute(Integer id, ExecutionContext context) throws RuntimeException {
@@ -19,7 +23,6 @@ public class Sort implements Executable {
                 .logger(logger)
                 .build();
         checker.checkArgs(context.getBlockArgumentsById(id));
-        checker.checkTextForNull(context.getOperatingText());
         ArrayList<String> textForSort = context.getOperatingText();
         Collections.sort(textForSort);
         context.setOperatingText(textForSort);

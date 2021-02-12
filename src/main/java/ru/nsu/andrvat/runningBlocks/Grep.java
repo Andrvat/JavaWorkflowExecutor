@@ -1,6 +1,5 @@
 package ru.nsu.andrvat.runningBlocks;
 
-import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
 import ru.nsu.andrvat.executors.ExecutionContext;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
@@ -8,9 +7,13 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Grep implements Executable {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
+public class Grep extends ExecutableBlock {
+    private static final Logger logger = LoggersHelper.getLoggerInstance(Grep.class.getName());
     private static final Integer requiredArgumentsNumber = 1;
+
+    public Grep() {
+        super(BlocksInOutTypes.InOutAvailable);
+    }
 
     @Override
     public void execute(Integer id, ExecutionContext context) throws RuntimeException {
@@ -21,7 +24,6 @@ public class Grep implements Executable {
                 .logger(logger)
                 .build();
         checker.checkArgs(blockArguments);
-        checker.checkTextForNull(context.getOperatingText());
         String searchWord = getWordForGrep(blockArguments);
         textForGrep.removeIf(currentTextLine -> !currentTextLine.contains(searchWord));
         context.setOperatingText(textForGrep);

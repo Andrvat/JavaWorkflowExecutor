@@ -12,9 +12,13 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Readfile implements Executable {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
+public class Readfile extends ExecutableBlock {
+    private static final Logger logger = LoggersHelper.getLoggerInstance(Readfile.class.getName());
     private static final Integer requiredArgumentsNumber = 1;
+
+    public Readfile() {
+        super(BlocksInOutTypes.OutOnly);
+    }
 
     @Override
     public void execute(Integer id, ExecutionContext context) throws RuntimeException {
@@ -24,7 +28,6 @@ public class Readfile implements Executable {
                 .logger(logger)
                 .build();
         checker.checkArgs(blockArguments);
-        checker.checkTextForNull(context.getOperatingText());
         String sourceFilename = getSourceFilenameForReadingText(blockArguments);
         InputStream inputStream = Readfile.class.getResourceAsStream(sourceFilename);
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {

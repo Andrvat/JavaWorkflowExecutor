@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ApplicationRunner {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
+    private static final Logger logger = LoggersHelper.getLoggerInstance(ApplicationRunner.class.getName());
 
     // TODO: getResourceAsStream ВО ВСЕМ ПРОЕКТЕ читает файлы только рядом с .class. Как их заставить читать оттуда, где мне нужно?
     public static void main(String[] args) {
@@ -26,9 +26,10 @@ public class ApplicationRunner {
             return;
         }
 
-        WorkflowExecutor executor = new WorkflowExecutor();
         try {
-            executor.parametrizedRun(commandLineArgsParser.getSourceInputStream());
+            WorkflowExecutor executor = new WorkflowExecutor();
+            executor.parametrizedRun(WorkflowExecutor.getSourceInputStreamForReadingConfigsFromFile(
+                    commandLineArgsParser.getWorkflowConfigFilename()));
         } catch (RuntimeException exception) {
             logger.log(Level.SEVERE, "ParametrizedRun function ended abruptly. Program stopped!", exception);
         }

@@ -18,12 +18,4 @@ public class ArgumentsChecker implements Checkable {
             throw new RuntimeException();
         }
     }
-
-    @Override
-    public void checkTextForNull(ArrayList<String> text) throws RuntimeException {
-        if (text == null) {
-            logger.log(Level.SEVERE, "The text is null. Check the executing sequence for writefile and readfile blocks places");
-            throw new RuntimeException();
-        }
-    }
 }

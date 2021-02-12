@@ -46,11 +46,11 @@ public class CommandLineArgsParser implements Parseable {
         logger.info("All command line arguments were read");
     }
 
-    public InputStream getSourceInputStream() {
-        return CommandLineArgsParser.class.getResourceAsStream(workflowConfigFilename);
-    }
-
     public Options getParserOptions() {
         return parserOptions;
+    }
+
+    public String getWorkflowConfigFilename() {
+        return workflowConfigFilename;
     }
 }
