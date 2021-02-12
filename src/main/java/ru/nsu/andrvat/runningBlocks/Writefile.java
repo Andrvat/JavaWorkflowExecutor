@@ -1,6 +1,7 @@
 package ru.nsu.andrvat.runningBlocks;
 
 import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
+import ru.nsu.andrvat.exceptions.BlockArgumentsNumberException;
 import ru.nsu.andrvat.executors.ExecutionContext;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
@@ -20,7 +21,7 @@ public class Writefile extends ExecutableBlock {
     }
 
     @Override
-    public void execute(Integer id, ExecutionContext context) throws RuntimeException {
+    public void execute(Integer id, ExecutionContext context) throws BlockArgumentsNumberException, IOException {
         ArrayList<String> blockArguments = context.getBlockArgumentsById(id);
         ArgumentsChecker checker = ArgumentsChecker.builder()
                 .requiredArgumentsNumber(requiredArgumentsNumber)
@@ -32,19 +33,16 @@ public class Writefile extends ExecutableBlock {
             for (String currentTextLine : context.getOperatingText()) {
                 writer.println(currentTextLine);
             }
-        } catch (IOException exception) {
-            logger.log(Level.SEVERE, "Couldn't write data to " + destinationFilename, exception);
-            throw new RuntimeException();
         }
         logger.info("All data from operating text were successfully written to " + destinationFilename);
     }
 
-    private String getDestinationFilenameForReadingText(ArrayList<String> arguments) throws RuntimeException {
+    private String getDestinationFilenameForReadingText(ArrayList<String> arguments) throws BlockArgumentsNumberException {
         try {
             return arguments.get(0);
         } catch (IndexOutOfBoundsException exception) {
             logger.log(Level.SEVERE, "Not enough arguments to perform a write operation to a file", exception);
-            throw new RuntimeException();
+            throw new BlockArgumentsNumberException();
         }
     }
 }

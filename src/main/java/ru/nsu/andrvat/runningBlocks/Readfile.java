@@ -1,6 +1,7 @@
 package ru.nsu.andrvat.runningBlocks;
 
 import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
+import ru.nsu.andrvat.exceptions.BlockArgumentsNumberException;
 import ru.nsu.andrvat.executors.ExecutionContext;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
@@ -21,7 +22,7 @@ public class Readfile extends ExecutableBlock {
     }
 
     @Override
-    public void execute(Integer id, ExecutionContext context) throws RuntimeException {
+    public void execute(Integer id, ExecutionContext context) throws BlockArgumentsNumberException, IOException {
         ArrayList<String> blockArguments = context.getBlockArgumentsById(id);
         ArgumentsChecker checker = ArgumentsChecker.builder()
                 .requiredArgumentsNumber(requiredArgumentsNumber)
@@ -33,20 +34,17 @@ public class Readfile extends ExecutableBlock {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
             ArrayList<String> fromFileReadText = readAllDataByBufferedReader(reader);
             context.setOperatingText(fromFileReadText);
-        } catch (IOException | NullPointerException exception) {
-            logger.log(Level.SEVERE, "Couldn't read data from " + sourceFilename, exception);
-            throw new RuntimeException();
         }
         logger.info("All data from source file were successfully scanned");
         logger.info("Source data filename: " + sourceFilename);
     }
 
-    private String getSourceFilenameForReadingText(ArrayList<String> arguments) throws RuntimeException {
+    private String getSourceFilenameForReadingText(ArrayList<String> arguments) throws BlockArgumentsNumberException {
         try {
             return arguments.get(0);
         } catch (IndexOutOfBoundsException exception) {
             logger.log(Level.SEVERE, "Not enough arguments to perform a read operation from a file", exception);
-            throw new RuntimeException();
+            throw new BlockArgumentsNumberException();
         }
     }
 

@@ -1,6 +1,7 @@
 package ru.nsu.andrvat.runningBlocks;
 
 import lombok.Builder;
+import ru.nsu.andrvat.exceptions.BlockArgumentsNumberException;
 
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -12,10 +13,10 @@ public class ArgumentsChecker implements Checkable {
     private final Logger logger;
 
     @Override
-    public void checkArgs(ArrayList<String> arguments) throws RuntimeException {
+    public void checkArgs(ArrayList<String> arguments) throws BlockArgumentsNumberException {
         if (arguments.size() > requiredArgumentsNumber) {
             logger.log(Level.SEVERE, "Too much arguments in arguments " + arguments);
-            throw new RuntimeException();
+            throw new BlockArgumentsNumberException();
         }
     }
 }

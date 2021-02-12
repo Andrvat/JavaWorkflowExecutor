@@ -1,6 +1,7 @@
 package ru.nsu.andrvat.runningBlocks;
 
 import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
+import ru.nsu.andrvat.exceptions.BlockArgumentsNumberException;
 import ru.nsu.andrvat.executors.ExecutionContext;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
@@ -17,7 +18,7 @@ public class Sort extends ExecutableBlock {
     }
 
     @Override
-    public void execute(Integer id, ExecutionContext context) throws RuntimeException {
+    public void execute(Integer id, ExecutionContext context) throws BlockArgumentsNumberException {
         ArgumentsChecker checker = ArgumentsChecker.builder()
                 .requiredArgumentsNumber(requiredArgumentsNumber)
                 .logger(logger)

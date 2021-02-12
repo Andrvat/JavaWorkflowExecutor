@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2021-02-12T09:47:57.454966400Z</date>
-  <millis>1613123277454</millis>
-  <nanos>966400</nanos>
+  <date>2021-02-12T10:27:41.493973900Z</date>
+  <millis>1613125661493</millis>
+  <nanos>973900</nanos>
   <sequence>0</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -14,9 +14,9 @@
   <message>Option was created</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.498853200Z</date>
-  <millis>1613123277498</millis>
-  <nanos>853200</nanos>
+  <date>2021-02-12T10:27:41.549825100Z</date>
+  <millis>1613125661549</millis>
+  <nanos>825100</nanos>
   <sequence>1</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -26,9 +26,9 @@
   <message>All options were added by class constructor</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.502837300Z</date>
-  <millis>1613123277502</millis>
-  <nanos>837300</nanos>
+  <date>2021-02-12T10:27:41.554811500Z</date>
+  <millis>1613125661554</millis>
+  <nanos>811500</nanos>
   <sequence>2</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -38,9 +38,9 @@
   <message>Config filename: workflow.txt</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.502837300Z</date>
-  <millis>1613123277502</millis>
-  <nanos>837300</nanos>
+  <date>2021-02-12T10:27:41.555810200Z</date>
+  <millis>1613125661555</millis>
+  <nanos>810200</nanos>
   <sequence>3</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -50,9 +50,9 @@
   <message>All command line arguments were read</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.509823200Z</date>
-  <millis>1613123277509</millis>
-  <nanos>823200</nanos>
+  <date>2021-02-12T10:27:41.562790900Z</date>
+  <millis>1613125661562</millis>
+  <nanos>790900</nanos>
   <sequence>4</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -62,9 +62,9 @@
   <message>Configuration was successfully scanned</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.511816200Z</date>
-  <millis>1613123277511</millis>
-  <nanos>816200</nanos>
+  <date>2021-02-12T10:27:41.563788400Z</date>
+  <millis>1613125661563</millis>
+  <nanos>788400</nanos>
   <sequence>5</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -74,9 +74,9 @@
   <message>Configs source input streamjava.io.BufferedInputStream@66cd51c3</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.511816200Z</date>
-  <millis>1613123277511</millis>
-  <nanos>816200</nanos>
+  <date>2021-02-12T10:27:41.564786800Z</date>
+  <millis>1613125661564</millis>
+  <nanos>786800</nanos>
   <sequence>6</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -86,9 +86,9 @@
   <message>desc title was found successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.514806200Z</date>
-  <millis>1613123277514</millis>
-  <nanos>806200</nanos>
+  <date>2021-02-12T10:27:41.567776300Z</date>
+  <millis>1613125661567</millis>
+  <nanos>776300</nanos>
   <sequence>7</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -98,9 +98,9 @@
   <message>Block id [1] was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.515804200Z</date>
-  <millis>1613123277515</millis>
-  <nanos>804200</nanos>
+  <date>2021-02-12T10:27:41.568775100Z</date>
+  <millis>1613125661568</millis>
+  <nanos>775100</nanos>
   <sequence>8</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -110,9 +110,9 @@
   <message>Equal sign was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.516801400Z</date>
-  <millis>1613123277516</millis>
-  <nanos>801400</nanos>
+  <date>2021-02-12T10:27:41.569771200Z</date>
+  <millis>1613125661569</millis>
+  <nanos>771200</nanos>
   <sequence>9</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -122,9 +122,9 @@
   <message>Block operation name [replace] was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.517799600Z</date>
-  <millis>1613123277517</millis>
-  <nanos>799600</nanos>
+  <date>2021-02-12T10:27:41.569771200Z</date>
+  <millis>1613125661569</millis>
+  <nanos>771200</nanos>
   <sequence>10</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -134,9 +134,9 @@
   <message>Pair [1, replace] were added to properties successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.517799600Z</date>
-  <millis>1613123277517</millis>
-  <nanos>799600</nanos>
+  <date>2021-02-12T10:27:41.570768400Z</date>
+  <millis>1613125661570</millis>
+  <nanos>768400</nanos>
   <sequence>11</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -146,9 +146,9 @@
   <message>Block id [1] got his arguments successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.518795900Z</date>
-  <millis>1613123277518</millis>
-  <nanos>795900</nanos>
+  <date>2021-02-12T10:27:41.570768400Z</date>
+  <millis>1613125661570</millis>
+  <nanos>768400</nanos>
   <sequence>12</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -158,9 +158,9 @@
   <message>Block id [4] was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.518795900Z</date>
-  <millis>1613123277518</millis>
-  <nanos>795900</nanos>
+  <date>2021-02-12T10:27:41.571765800Z</date>
+  <millis>1613125661571</millis>
+  <nanos>765800</nanos>
   <sequence>13</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -170,9 +170,9 @@
   <message>Equal sign was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.519793100Z</date>
-  <millis>1613123277519</millis>
-  <nanos>793100</nanos>
+  <date>2021-02-12T10:27:41.571765800Z</date>
+  <millis>1613125661571</millis>
+  <nanos>765800</nanos>
   <sequence>14</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -182,9 +182,9 @@
   <message>Block operation name [dump] was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.519793100Z</date>
-  <millis>1613123277519</millis>
-  <nanos>793100</nanos>
+  <date>2021-02-12T10:27:41.572762700Z</date>
+  <millis>1613125661572</millis>
+  <nanos>762700</nanos>
   <sequence>15</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -194,9 +194,9 @@
   <message>Pair [4, dump] were added to properties successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.519793100Z</date>
-  <millis>1613123277519</millis>
-  <nanos>793100</nanos>
+  <date>2021-02-12T10:27:41.572762700Z</date>
+  <millis>1613125661572</millis>
+  <nanos>762700</nanos>
   <sequence>16</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -206,9 +206,9 @@
   <message>Block id [4] got his arguments successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.520790400Z</date>
-  <millis>1613123277520</millis>
-  <nanos>790400</nanos>
+  <date>2021-02-12T10:27:41.573760100Z</date>
+  <millis>1613125661573</millis>
+  <nanos>760100</nanos>
   <sequence>17</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -218,9 +218,9 @@
   <message>Block id [2] was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.521788Z</date>
-  <millis>1613123277521</millis>
-  <nanos>788000</nanos>
+  <date>2021-02-12T10:27:41.573760100Z</date>
+  <millis>1613125661573</millis>
+  <nanos>760100</nanos>
   <sequence>18</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -230,9 +230,9 @@
   <message>Equal sign was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.521788Z</date>
-  <millis>1613123277521</millis>
-  <nanos>788000</nanos>
+  <date>2021-02-12T10:27:41.574834400Z</date>
+  <millis>1613125661574</millis>
+  <nanos>834400</nanos>
   <sequence>19</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -242,9 +242,9 @@
   <message>Block operation name [grep] was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.522785400Z</date>
-  <millis>1613123277522</millis>
-  <nanos>785400</nanos>
+  <date>2021-02-12T10:27:41.575755900Z</date>
+  <millis>1613125661575</millis>
+  <nanos>755900</nanos>
   <sequence>20</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -254,9 +254,9 @@
   <message>Pair [2, grep] were added to properties successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.522785400Z</date>
-  <millis>1613123277522</millis>
-  <nanos>785400</nanos>
+  <date>2021-02-12T10:27:41.575755900Z</date>
+  <millis>1613125661575</millis>
+  <nanos>755900</nanos>
   <sequence>21</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -266,9 +266,9 @@
   <message>Block id [2] got his arguments successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.523783800Z</date>
-  <millis>1613123277523</millis>
-  <nanos>783800</nanos>
+  <date>2021-02-12T10:27:41.576753700Z</date>
+  <millis>1613125661576</millis>
+  <nanos>753700</nanos>
   <sequence>22</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -278,9 +278,9 @@
   <message>Block id [3] was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.523783800Z</date>
-  <millis>1613123277523</millis>
-  <nanos>783800</nanos>
+  <date>2021-02-12T10:27:41.577749800Z</date>
+  <millis>1613125661577</millis>
+  <nanos>749800</nanos>
   <sequence>23</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -290,9 +290,9 @@
   <message>Equal sign was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.524780800Z</date>
-  <millis>1613123277524</millis>
-  <nanos>780800</nanos>
+  <date>2021-02-12T10:27:41.578747600Z</date>
+  <millis>1613125661578</millis>
+  <nanos>747600</nanos>
   <sequence>24</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -302,9 +302,9 @@
   <message>Block operation name [sort] was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.524780800Z</date>
-  <millis>1613123277524</millis>
-  <nanos>780800</nanos>
+  <date>2021-02-12T10:27:41.579747700Z</date>
+  <millis>1613125661579</millis>
+  <nanos>747700</nanos>
   <sequence>25</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -314,9 +314,9 @@
   <message>Pair [3, sort] were added to properties successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.525779200Z</date>
-  <millis>1613123277525</millis>
-  <nanos>779200</nanos>
+  <date>2021-02-12T10:27:41.579747700Z</date>
+  <millis>1613125661579</millis>
+  <nanos>747700</nanos>
   <sequence>26</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -326,9 +326,9 @@
   <message>Block id [3] got his arguments successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.525779200Z</date>
-  <millis>1613123277525</millis>
-  <nanos>779200</nanos>
+  <date>2021-02-12T10:27:41.580743200Z</date>
+  <millis>1613125661580</millis>
+  <nanos>743200</nanos>
   <sequence>27</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -338,9 +338,9 @@
   <message>Block id [0] was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.526775300Z</date>
-  <millis>1613123277526</millis>
-  <nanos>775300</nanos>
+  <date>2021-02-12T10:27:41.580743200Z</date>
+  <millis>1613125661580</millis>
+  <nanos>743200</nanos>
   <sequence>28</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -350,9 +350,9 @@
   <message>Equal sign was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.526775300Z</date>
-  <millis>1613123277526</millis>
-  <nanos>775300</nanos>
+  <date>2021-02-12T10:27:41.581740500Z</date>
+  <millis>1613125661581</millis>
+  <nanos>740500</nanos>
   <sequence>29</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -362,9 +362,9 @@
   <message>Block operation name [readfile] was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.527772500Z</date>
-  <millis>1613123277527</millis>
-  <nanos>772500</nanos>
+  <date>2021-02-12T10:27:41.581740500Z</date>
+  <millis>1613125661581</millis>
+  <nanos>740500</nanos>
   <sequence>30</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -374,9 +374,9 @@
   <message>Pair [0, readfile] were added to properties successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.527772500Z</date>
-  <millis>1613123277527</millis>
-  <nanos>772500</nanos>
+  <date>2021-02-12T10:27:41.582738400Z</date>
+  <millis>1613125661582</millis>
+  <nanos>738400</nanos>
   <sequence>31</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -386,9 +386,9 @@
   <message>Block id [0] got his arguments successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.528770Z</date>
-  <millis>1613123277528</millis>
-  <nanos>770000</nanos>
+  <date>2021-02-12T10:27:41.583736500Z</date>
+  <millis>1613125661583</millis>
+  <nanos>736500</nanos>
   <sequence>32</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -398,9 +398,9 @@
   <message>Block id [5] was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.528770Z</date>
-  <millis>1613123277528</millis>
-  <nanos>770000</nanos>
+  <date>2021-02-12T10:27:41.584735800Z</date>
+  <millis>1613125661584</millis>
+  <nanos>735800</nanos>
   <sequence>33</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -410,9 +410,9 @@
   <message>Equal sign was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.528770Z</date>
-  <millis>1613123277528</millis>
-  <nanos>770000</nanos>
+  <date>2021-02-12T10:27:41.585732200Z</date>
+  <millis>1613125661585</millis>
+  <nanos>732200</nanos>
   <sequence>34</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -422,9 +422,9 @@
   <message>Block operation name [writefile] was read successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.529765800Z</date>
-  <millis>1613123277529</millis>
-  <nanos>765800</nanos>
+  <date>2021-02-12T10:27:41.586726400Z</date>
+  <millis>1613125661586</millis>
+  <nanos>726400</nanos>
   <sequence>35</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -434,9 +434,9 @@
   <message>Pair [5, writefile] were added to properties successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.529765800Z</date>
-  <millis>1613123277529</millis>
-  <nanos>765800</nanos>
+  <date>2021-02-12T10:27:41.586726400Z</date>
+  <millis>1613125661586</millis>
+  <nanos>726400</nanos>
   <sequence>36</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -446,9 +446,9 @@
   <message>Block id [5] got his arguments successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.530764300Z</date>
-  <millis>1613123277530</millis>
-  <nanos>764300</nanos>
+  <date>2021-02-12T10:27:41.587723900Z</date>
+  <millis>1613125661587</millis>
+  <nanos>723900</nanos>
   <sequence>37</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -458,9 +458,9 @@
   <message>All matches were parsed successfully</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.531762Z</date>
-  <millis>1613123277531</millis>
-  <nanos>762000</nanos>
+  <date>2021-02-12T10:27:41.588722300Z</date>
+  <millis>1613125661588</millis>
+  <nanos>722300</nanos>
   <sequence>38</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -470,9 +470,9 @@
   <message>All block ids were added successfully to executors queue</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.532776800Z</date>
-  <millis>1613123277532</millis>
-  <nanos>776800</nanos>
+  <date>2021-02-12T10:27:41.588722300Z</date>
+  <millis>1613125661588</millis>
+  <nanos>722300</nanos>
   <sequence>39</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -482,9 +482,9 @@
   <message>Workflow configs was successfully analyzed</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.552706200Z</date>
-  <millis>1613123277552</millis>
-  <nanos>706200</nanos>
+  <date>2021-02-12T10:27:41.594705500Z</date>
+  <millis>1613125661594</millis>
+  <nanos>705500</nanos>
   <sequence>40</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -494,9 +494,9 @@
   <message>All data from source file were successfully scanned</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.553703300Z</date>
-  <millis>1613123277553</millis>
-  <nanos>703300</nanos>
+  <date>2021-02-12T10:27:41.595702500Z</date>
+  <millis>1613125661595</millis>
+  <nanos>702500</nanos>
   <sequence>41</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -506,9 +506,9 @@
   <message>Source data filename: in.txt</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.559689100Z</date>
-  <millis>1613123277559</millis>
-  <nanos>689100</nanos>
+  <date>2021-02-12T10:27:41.598699100Z</date>
+  <millis>1613125661598</millis>
+  <nanos>699100</nanos>
   <sequence>42</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -518,9 +518,9 @@
   <message>All data from operating text were successfully dumped to dumpedText.txt</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.564673300Z</date>
-  <millis>1613123277564</millis>
-  <nanos>673300</nanos>
+  <date>2021-02-12T10:27:41.600689600Z</date>
+  <millis>1613125661600</millis>
+  <nanos>689600</nanos>
   <sequence>43</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -530,9 +530,9 @@
   <message>The word [abracadabra] was successfully replaced with the word [cadabraabra] in the entire source text</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.571654400Z</date>
-  <millis>1613123277571</millis>
-  <nanos>654400</nanos>
+  <date>2021-02-12T10:27:41.602683700Z</date>
+  <millis>1613125661602</millis>
+  <nanos>683700</nanos>
   <sequence>44</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -542,9 +542,9 @@
   <message>Selection of context text lines containing the word [braab] was successful done</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.576645600Z</date>
-  <millis>1613123277576</millis>
-  <nanos>645600</nanos>
+  <date>2021-02-12T10:27:41.603681Z</date>
+  <millis>1613125661603</millis>
+  <nanos>681000</nanos>
   <sequence>45</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>
@@ -554,9 +554,9 @@
   <message>All lines from operating text were successfully sorted</message>
 </record>
 <record>
-  <date>2021-02-12T09:47:57.581627900Z</date>
-  <millis>1613123277581</millis>
-  <nanos>627900</nanos>
+  <date>2021-02-12T10:27:41.605676400Z</date>
+  <millis>1613125661605</millis>
+  <nanos>676400</nanos>
   <sequence>46</sequence>
   <logger>ru.nsu.andrvat.appRunner.ApplicationRunner</logger>
   <level>INFO</level>

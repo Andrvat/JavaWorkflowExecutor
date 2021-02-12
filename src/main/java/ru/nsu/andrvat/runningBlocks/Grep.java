@@ -1,5 +1,6 @@
 package ru.nsu.andrvat.runningBlocks;
 
+import ru.nsu.andrvat.exceptions.BlockArgumentsNumberException;
 import ru.nsu.andrvat.executors.ExecutionContext;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
@@ -16,7 +17,7 @@ public class Grep extends ExecutableBlock {
     }
 
     @Override
-    public void execute(Integer id, ExecutionContext context) throws RuntimeException {
+    public void execute(Integer id, ExecutionContext context) throws BlockArgumentsNumberException {
         ArrayList<String> blockArguments = context.getBlockArgumentsById(id);
         ArrayList<String> textForGrep = context.getOperatingText();
         ArgumentsChecker checker = ArgumentsChecker.builder()
@@ -30,12 +31,12 @@ public class Grep extends ExecutableBlock {
         logger.info("Selection of context text lines containing the word [" + searchWord + "] was successful done");
     }
 
-    private String getWordForGrep(ArrayList<String> arguments) throws RuntimeException {
+    private String getWordForGrep(ArrayList<String> arguments) throws BlockArgumentsNumberException {
         try {
             return arguments.get(0);
         } catch (IndexOutOfBoundsException exception) {
             logger.log(Level.SEVERE, "Not enough arguments to select lines with the word", exception);
-            throw new RuntimeException();
+            throw new BlockArgumentsNumberException();
         }
     }
 }

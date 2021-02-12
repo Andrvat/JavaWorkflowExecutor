@@ -1,9 +1,9 @@
 package ru.nsu.andrvat.executors;
 
-import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
+import ru.nsu.andrvat.exceptions.BlockArgumentsNumberException;
+import ru.nsu.andrvat.exceptions.MismatchTypesException;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 import ru.nsu.andrvat.runningBlocks.BlocksInOutTypes;
-import ru.nsu.andrvat.runningBlocks.Executable;
 import ru.nsu.andrvat.runningBlocks.ExecutableBlock;
 import ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner;
 
@@ -20,7 +20,7 @@ public class WorkflowExecutor implements ParameterizedRunnable {
     private ExecutionContext context;
 
     @Override
-    public void parametrizedRun(InputStream sourceInputStream) throws RuntimeException {
+    public void parametrizedRun(InputStream sourceInputStream) {
         WorkflowConfigsScanner configsScanner = new WorkflowConfigsScanner();
         configsScanner.scanConfig(sourceInputStream);
         configsScanner.analyzeConfig();
@@ -47,20 +47,31 @@ public class WorkflowExecutor implements ParameterizedRunnable {
             Integer blockId = executorsQueue.remove();
             ExecutableBlock executableBlock = BlocksBuilder.getInstance().buildBlock(context.getBlockNameById(blockId));
             BlocksInOutTypes currentExecutableBlockType = executableBlock.getBlockType();
-            if (isCurrentBlockMatchThatPreviousOne(previousBlockType, currentExecutableBlockType)) {
+            try {
+                checkCurrentBlockMatchThatPreviousOne(previousBlockType, currentExecutableBlockType);
                 executableBlock.execute(blockId, context);
                 previousBlockType = currentExecutableBlockType;
-            } else {
-                logger.log(Level.SEVERE, "Check the executing sequence for writefile and readfile blocks places");
+            } catch (MismatchTypesException exception) {
+                logger.log(Level.SEVERE, "Mismatch types. Check InOnly- and OutOnly's operation places.",
+                        exception);
+                return;
+            } catch (BlockArgumentsNumberException exception) {
+                logger.log(Level.SEVERE,
+                        "Invalid arguments number to perform an operation.",
+                        exception);
+                return;
+            } catch (IOException exception) {
+                logger.log(Level.SEVERE, "Couldn't read or write data. Check source and destination files.", exception);
                 return;
             }
-
         }
     }
 
-    private Boolean isCurrentBlockMatchThatPreviousOne(BlocksInOutTypes previous, BlocksInOutTypes current) {
-        return !previous.equals(BlocksInOutTypes.InOnly) ||
-                (!current.equals(BlocksInOutTypes.InOutAvailable) && !current.equals(BlocksInOutTypes.OutOnly));
+    private void checkCurrentBlockMatchThatPreviousOne(BlocksInOutTypes previous, BlocksInOutTypes current) throws MismatchTypesException {
+        if (previous.equals(BlocksInOutTypes.InOnly) &&
+                (current.equals(BlocksInOutTypes.InOutAvailable) || current.equals(BlocksInOutTypes.OutOnly))) {
+            throw new MismatchTypesException();
+        }
     }
 
     public ArrayList<String> getContextOperatingText() {

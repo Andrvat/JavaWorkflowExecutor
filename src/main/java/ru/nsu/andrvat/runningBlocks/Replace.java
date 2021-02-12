@@ -1,6 +1,7 @@
 package ru.nsu.andrvat.runningBlocks;
 
 import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
+import ru.nsu.andrvat.exceptions.BlockArgumentsNumberException;
 import ru.nsu.andrvat.executors.ExecutionContext;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
@@ -17,7 +18,7 @@ public class Replace extends ExecutableBlock {
     }
 
     @Override
-    public void execute(Integer id, ExecutionContext context) throws RuntimeException {
+    public void execute(Integer id, ExecutionContext context) throws BlockArgumentsNumberException {
         ArrayList<String> blockArguments = context.getBlockArgumentsById(id);
         ArrayList<String> textForReplacing = new ArrayList<>();
         ArgumentsChecker checker = ArgumentsChecker.builder()
@@ -35,21 +36,21 @@ public class Replace extends ExecutableBlock {
                 "was successfully replaced with the word [" + substitutingWord + "] in the entire source text");
     }
 
-    private String getWordToReplaceIt(ArrayList<String> arguments) throws RuntimeException {
+    private String getWordToReplaceIt(ArrayList<String> arguments) throws BlockArgumentsNumberException {
         try {
             return arguments.get(0);
         } catch (IndexOutOfBoundsException exception) {
             logger.log(Level.SEVERE, "There is no word to replace it in arguments", exception);
-            throw new RuntimeException();
+            throw new BlockArgumentsNumberException();
         }
     }
 
-    private String getSubstitutingWord(ArrayList<String> arguments) throws RuntimeException {
+    private String getSubstitutingWord(ArrayList<String> arguments) throws BlockArgumentsNumberException {
         try {
             return arguments.get(1);
         } catch (IndexOutOfBoundsException exception) {
             logger.log(Level.SEVERE, "There is no substituting word int arguments", exception);
-            throw new RuntimeException();
+            throw new BlockArgumentsNumberException();
         }
     }
 }
