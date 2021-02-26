@@ -1,20 +1,16 @@
 package ru.nsu.andrvat.executors;
 
-import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
 import ru.nsu.andrvat.exceptions.BlocksFactoryException;
-import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
-import ru.nsu.andrvat.runningBlocks.Executable;
 import ru.nsu.andrvat.runningBlocks.ExecutableBlock;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public final class BlocksBuilder {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(BlocksBuilder.class.getName());
+    private static final Logger logger = Logger.getLogger(BlocksBuilder.class.getName());
 
     private static final Properties executingCommandsConfigs = new Properties();
 

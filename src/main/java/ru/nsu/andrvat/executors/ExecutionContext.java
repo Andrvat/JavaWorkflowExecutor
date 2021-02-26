@@ -1,8 +1,6 @@
 package ru.nsu.andrvat.executors;
 
 import lombok.Builder;
-import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
-import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
 import java.util.*;
 import java.util.logging.Logger;
@@ -14,7 +12,7 @@ public class ExecutionContext {
 
     private ArrayList<String> operatingText;
 
-    private static final Logger logger = LoggersHelper.getLoggerInstance(ExecutionContext.class.getName());
+    private static final Logger logger = Logger.getLogger(ExecutionContext.class.getName());
 
     public ArrayList<String> getBlockArgumentsById(Integer id) {
         return blockArguments.get(id);

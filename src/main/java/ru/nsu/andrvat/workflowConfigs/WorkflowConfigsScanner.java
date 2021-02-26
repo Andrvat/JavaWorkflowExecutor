@@ -1,8 +1,5 @@
 package ru.nsu.andrvat.workflowConfigs;
 
-import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
-import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
-
 import javax.naming.InvalidNameException;
 import java.io.*;
 import java.security.SignatureException;
@@ -16,7 +13,7 @@ public class WorkflowConfigsScanner implements Scannable, Analyzable {
     private final Queue<Integer> executorsQueue = new LinkedList<>();
     private final Queue<String> configuratorContents = new LinkedList<>();
 
-    private static final Logger logger = LoggersHelper.getLoggerInstance(WorkflowConfigsScanner.class.getName());
+    private static final Logger logger = Logger.getLogger(WorkflowConfigsScanner.class.getName());
 
     @Override
     public void scanConfig(InputStream sourceInputStream) throws RuntimeException {

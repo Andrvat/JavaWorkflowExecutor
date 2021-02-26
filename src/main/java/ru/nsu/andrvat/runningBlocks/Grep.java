@@ -2,14 +2,13 @@ package ru.nsu.andrvat.runningBlocks;
 
 import ru.nsu.andrvat.exceptions.BlockArgumentsNumberException;
 import ru.nsu.andrvat.executors.ExecutionContext;
-import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Grep extends ExecutableBlock {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(Grep.class.getName());
+    private static final Logger logger = Logger.getLogger(Grep.class.getName());
     private static final Integer requiredArgumentsNumber = 1;
 
     public Grep() {

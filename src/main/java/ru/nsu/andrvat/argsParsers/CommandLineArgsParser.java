@@ -1,13 +1,11 @@
 package ru.nsu.andrvat.argsParsers;
 
 import org.apache.commons.cli.*;
-import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
-import java.io.InputStream;
 import java.util.logging.Logger;
 
 public class CommandLineArgsParser implements Parseable {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(CommandLineArgsParser.class.getName());
+    private static final Logger logger = Logger.getLogger(CommandLineArgsParser.class.getName());
 
     private final Options parserOptions;
     private String workflowConfigFilename;

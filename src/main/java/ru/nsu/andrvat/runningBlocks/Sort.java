@@ -1,16 +1,14 @@
 package ru.nsu.andrvat.runningBlocks;
 
-import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
 import ru.nsu.andrvat.exceptions.BlockArgumentsNumberException;
 import ru.nsu.andrvat.executors.ExecutionContext;
-import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.logging.Logger;
 
 public class Sort extends ExecutableBlock {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(Sort.class.getName());
+    private static final Logger logger = Logger.getLogger(Sort.class.getName());
     private static final Integer requiredArgumentsNumber = 0;
 
     public Sort() {

@@ -1,9 +1,9 @@
 package ru.nsu.andrvat.executors;
 
+import ru.nsu.andrvat.appRunner.ApplicationRunner;
 import ru.nsu.andrvat.exceptions.BlockArgumentsNumberException;
 import ru.nsu.andrvat.exceptions.BlocksFactoryException;
 import ru.nsu.andrvat.exceptions.MismatchTypesException;
-import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 import ru.nsu.andrvat.runningBlocks.BlocksInOutTypes;
 import ru.nsu.andrvat.runningBlocks.ExecutableBlock;
 import ru.nsu.andrvat.workflowConfigs.WorkflowConfigsScanner;
@@ -16,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class WorkflowExecutor implements ParameterizedRunnable {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(WorkflowExecutor.class.getName());
+    private static final Logger logger = Logger.getLogger(WorkflowExecutor.class.getName());
 
     private ExecutionContext context;
 

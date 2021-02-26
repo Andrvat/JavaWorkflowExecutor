@@ -1,16 +1,14 @@
 package ru.nsu.andrvat.runningBlocks;
 
-import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
 import ru.nsu.andrvat.exceptions.BlockArgumentsNumberException;
 import ru.nsu.andrvat.executors.ExecutionContext;
-import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Replace extends ExecutableBlock {
-    private static final Logger logger = LoggersHelper.getLoggerInstance(Replace.class.getName());
+    private static final Logger logger = Logger.getLogger(Replace.class.getName());
     private static final Integer requiredArgumentsNumber = 2;
 
     public Replace() {
