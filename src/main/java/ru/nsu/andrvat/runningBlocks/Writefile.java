@@ -21,8 +21,7 @@ public class Writefile extends ExecutableBlock {
     }
 
     @Override
-    public void execute(Integer id, ExecutionContext context) throws BlockArgumentsNumberException, IOException {
-        ArrayList<String> blockArguments = context.getBlockArgumentsById(id);
+    public void execute(ArrayList<String> blockArguments, ExecutionContext context) throws BlockArgumentsNumberException, IOException {
         ArgumentsChecker checker = ArgumentsChecker.builder()
                 .requiredArgumentsNumber(requiredArgumentsNumber)
                 .logger(logger)

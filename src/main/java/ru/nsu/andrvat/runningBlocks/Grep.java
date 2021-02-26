@@ -17,8 +17,7 @@ public class Grep extends ExecutableBlock {
     }
 
     @Override
-    public void execute(Integer id, ExecutionContext context) throws BlockArgumentsNumberException {
-        ArrayList<String> blockArguments = context.getBlockArgumentsById(id);
+    public void execute(ArrayList<String> blockArguments, ExecutionContext context) throws BlockArgumentsNumberException {
         ArrayList<String> textForGrep = context.getOperatingText();
         ArgumentsChecker checker = ArgumentsChecker.builder()
                 .requiredArgumentsNumber(requiredArgumentsNumber)

@@ -1,6 +1,7 @@
 package ru.nsu.andrvat.executors;
 
 import ru.nsu.andrvat.argsParsers.CommandLineArgsParser;
+import ru.nsu.andrvat.exceptions.BlocksFactoryException;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 import ru.nsu.andrvat.runningBlocks.Executable;
 import ru.nsu.andrvat.runningBlocks.ExecutableBlock;
@@ -38,28 +39,18 @@ public final class BlocksBuilder {
         executingCommandsConfigs.load(configsStream);
     }
 
-    public ExecutableBlock buildBlock(String blockName) throws RuntimeException {
+    public ExecutableBlock buildBlock(String blockName) throws BlocksFactoryException {
         try {
             String executableClassName = (String) executingCommandsConfigs.get(blockName);
+//            if (executableClassName == null) {
+//                throw new BlocksFactoryException();
+//            }
             Class<?> operandClass = Class.forName(executableClassName);
             return (ExecutableBlock) operandClass.getDeclaredConstructor().newInstance();
-        } catch (ClassNotFoundException exception) {
-            logger.log(Level.SEVERE, "Class by name [" + blockName + "] was not found. " +
-                    "Program stopped. Exit from run app", exception);
-            throw new RuntimeException();
-        } catch (NoSuchMethodException exception) {
-            logger.log(Level.SEVERE, "Class by name [" + blockName + "] couldn't found empty constructor. " +
-                    "Program stopped. Exit from run app", exception);
-            throw new RuntimeException();
-        } catch (InstantiationException | IllegalAccessException | InvocationTargetException exception) {
-            logger.log(Level.SEVERE, "Class by name [" + blockName + "] couldn't instance an object. " +
-                    "Program stopped. Exit from run app", exception);
-            throw new RuntimeException();
         } catch (Exception exception) {
             logger.log(Level.SEVERE, "Class by name [" + blockName + "] couldn't create an object. " +
-                    "The reason is not defined. " +
                     "Program stopped. Exit from run app", exception);
-            throw new RuntimeException();
+            throw new BlocksFactoryException();
         }
     }
 }

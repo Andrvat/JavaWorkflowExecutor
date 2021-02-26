@@ -18,12 +18,12 @@ public class Sort extends ExecutableBlock {
     }
 
     @Override
-    public void execute(Integer id, ExecutionContext context) throws BlockArgumentsNumberException {
+    public void execute(ArrayList<String> blockArguments, ExecutionContext context) throws BlockArgumentsNumberException {
         ArgumentsChecker checker = ArgumentsChecker.builder()
                 .requiredArgumentsNumber(requiredArgumentsNumber)
                 .logger(logger)
                 .build();
-        checker.checkArgs(context.getBlockArgumentsById(id));
+        checker.checkArgs(blockArguments);
         ArrayList<String> textForSort = context.getOperatingText();
         Collections.sort(textForSort);
         context.setOperatingText(textForSort);

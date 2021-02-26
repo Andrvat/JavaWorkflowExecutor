@@ -1,6 +1,7 @@
 package ru.nsu.andrvat.executors;
 
 import ru.nsu.andrvat.exceptions.BlockArgumentsNumberException;
+import ru.nsu.andrvat.exceptions.BlocksFactoryException;
 import ru.nsu.andrvat.exceptions.MismatchTypesException;
 import ru.nsu.andrvat.loggersFeatures.LoggersHelper;
 import ru.nsu.andrvat.runningBlocks.BlocksInOutTypes;
@@ -38,10 +39,14 @@ public class WorkflowExecutor implements ParameterizedRunnable {
             logger.log(Level.SEVERE, "Couldn't read file executingCommandsConfigs.properties. " +
                     "Parametrized run stopped", exception);
             throw new RuntimeException();
+        } catch (BlocksFactoryException exception) {
+            logger.log(Level.SEVERE, "Couldn't create a block by blocks factory. " +
+                    "Parametrized run stopped", exception);
+            throw new RuntimeException();
         }
     }
 
-    private void executeBlocksCallsSequence(Queue<Integer> executorsQueue) throws IOException {
+    private void executeBlocksCallsSequence(Queue<Integer> executorsQueue) throws IOException, BlocksFactoryException {
         BlocksInOutTypes previousBlockType = BlocksInOutTypes.OutOnly;
         while (!executorsQueue.isEmpty()) {
             Integer blockId = executorsQueue.remove();
@@ -49,7 +54,8 @@ public class WorkflowExecutor implements ParameterizedRunnable {
             BlocksInOutTypes currentExecutableBlockType = executableBlock.getBlockType();
             try {
                 checkCurrentBlockMatchThatPreviousOne(previousBlockType, currentExecutableBlockType);
-                executableBlock.execute(blockId, context);
+                ArrayList<String> blockArguments = context.getBlockArgumentsById(blockId);
+                executableBlock.execute(blockArguments, context);
                 previousBlockType = currentExecutableBlockType;
             } catch (MismatchTypesException exception) {
                 logger.log(Level.SEVERE, "Mismatch types. Check InOnly- and OutOnly's operation places.",

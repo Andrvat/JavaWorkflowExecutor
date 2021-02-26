@@ -18,8 +18,7 @@ public class Replace extends ExecutableBlock {
     }
 
     @Override
-    public void execute(Integer id, ExecutionContext context) throws BlockArgumentsNumberException {
-        ArrayList<String> blockArguments = context.getBlockArgumentsById(id);
+    public void execute(ArrayList<String> blockArguments, ExecutionContext context) throws BlockArgumentsNumberException {
         ArrayList<String> textForReplacing = new ArrayList<>();
         ArgumentsChecker checker = ArgumentsChecker.builder()
                 .requiredArgumentsNumber(requiredArgumentsNumber)
